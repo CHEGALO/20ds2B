@@ -16,9 +16,14 @@ class WeakMap {
    size(){
       return this.items.length;
   }
+  
+  print(){
+   return this.items.toString();
+
+   }
    
 }
 
 let stack = new WeakMap();
 stack.push(3);
-console.log(stack);
+console.log(stack.print());
