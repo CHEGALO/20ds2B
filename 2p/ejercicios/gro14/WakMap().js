@@ -1,11 +1,10 @@
 class WeakMap {
    constructor () {
-      items.set(this, []);
+      this.items=[];
    }
 
    push(element){
-      let s = items.get(this); //{3}
-      s.push(); 
+      this.items.push(element);
    }
 
    pop(){
